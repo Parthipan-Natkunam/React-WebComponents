@@ -1,0 +1,10 @@
+{
+  "name": "webcomponent-styleguide",
+  "version": "0.0.1",
+  "description": "A demo styleguide built with native web components",
+  "author": "Parthipan Natkunam",
+  "license": "MIT",
+  "publishConfig": {
+      "access": "public"
+  }
+}

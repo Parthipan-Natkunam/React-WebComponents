@@ -1,0 +1,12 @@
+{
+  "name": "react-web-components",
+  "version": "0.0.1",
+  "description": "A demo of integrating web-components with React",
+  "main": "index.js",
+  "author": "Parthipan Natkunam",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "src/*"
+  ]
+}

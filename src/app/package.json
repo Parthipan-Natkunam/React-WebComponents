@@ -1,0 +1,12 @@
+{
+  "name": "react-demo-app",
+  "version": "0.0.1",
+  "description": "A demo of integrating web-components with React",
+  "main": "index.js",
+  "author": "Parthipan Natkunam",
+  "license": "MIT",
+  "dependencies": {
+    "react": "18.1.0",
+    "react-dom": "18.1.0"
+  }
+}
