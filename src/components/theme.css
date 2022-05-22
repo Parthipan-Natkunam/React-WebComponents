@@ -1,0 +1,11 @@
+:root {
+  --primary-bg: #2cade4;
+  --primary-fg: rgb(251, 243, 243);
+  --primary-border-color: #6fcaf1;
+  --secondary-bg: rgb(255, 254, 254);
+  --secondary-fg: #2cade4;
+  --secondary-border-color: #6fcaf1;
+  --tertiary-bg: #fde74c;
+  --tertiary-fg: rgb(21, 20, 20);
+  --tertiary-border-color: #fde74c;
+}
