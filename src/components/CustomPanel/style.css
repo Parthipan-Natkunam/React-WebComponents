@@ -1,0 +1,39 @@
+.panel {
+  margin: 1.2rem 0;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.panel-header {
+  padding-bottom: 4px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.panel-header > span:first-of-type {
+  margin-right: 12px;
+}
+
+.panel-body {
+  margin: 8px 0 0 28px;
+  font-size: 1rem;
+  text-align: justify;
+}
+
+.primary {
+  background-color: var(--primary-bg);
+  border: 1px solid var(--primary-border-color);
+  color: var(--primary-fg);
+}
+.secondary {
+  background-color: var(--secondary-bg);
+  border: 1px solid var(--secondary-border-color);
+  color: var(--secondary-fg);
+}
+.tertiary {
+  background-color: var(--tertiary-bg);
+  border: 1px solid var(--tertiary-border-color);
+  color: var(--tertiary-fg);
+}

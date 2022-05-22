@@ -1,9 +1,9 @@
 window
   .fetch("CustomButton/template.html")
   .then((stream) => stream.text())
-  .then((text) => define(text));
+  .then((text) => defineButton(text));
 
-function define(html) {
+function defineButton(html) {
   class CustomButton extends HTMLElement {
     static get observedAttributes() {
       return ["label", "variant"];
@@ -54,5 +54,5 @@ function define(html) {
     }
   }
 
-  window.customElements.define("custom-button", CustomButton);
+  window.customElements.get('custom-button') || window.customElements.define("custom-button", CustomButton);
 }
