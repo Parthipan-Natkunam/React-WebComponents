@@ -5,6 +5,24 @@ window
 
 function define(html) {
   class CustomButton extends HTMLElement {
+    static get observedAttributes() {
+      return ["label", "variant"];
+    }
+
+    get label() {
+      return this.getAttribute("label");
+    }
+    get variant(){
+      return this.getAttribute("variant");
+    }
+
+    set variant(value){
+      this.setAttribute("variant", value);
+    }
+    set label(value){
+      this.setAttribute("label", value);
+    }
+
     constructor() {
       super();
       this.attachShadow({ mode: "open" });
@@ -14,9 +32,25 @@ function define(html) {
       this.render();
     }
 
+    attributeChangedCallback(attrName, oldValue, newValue) {
+      if (oldValue !== newValue) {
+        this[attrName] = newValue;
+        this.render();
+      }
+    }
+
     render() {
       const { shadowRoot } = this;
       shadowRoot.innerHTML = html;
+      const button = shadowRoot.querySelector("button");
+      if (button) {
+        if(this.label) button.innerHTML = this.label;
+        if (this.variant) {
+          button.classList.add(this.variant);
+        } else {
+          button.classList.add("primary");
+        }
+      }
     }
   }
 

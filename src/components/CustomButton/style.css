@@ -1,13 +1,26 @@
-.custom-btn {
+button {
   display: inline-block;
   padding: 0.5rem 1rem;
-  border: 1px solid #000;
   border-radius: 0.25rem;
-  background-color: #000;
-  color: #fff;
   cursor: pointer;
 }
 
-.custom-btn:active {
+button:active {
   transform: scale(0.99);
+}
+
+.primary {
+  border: 1px solid #6fcaf1;
+  color: rgb(251, 243, 243);
+  background-color: #2cade4;
+}
+.secondary {
+  border: 1px solid #6fcaf1;
+  color: #2cade4;
+  background-color: rgb(255, 254, 254);
+}
+.tertiary {
+  border: 1px solid #fde74c;
+  color: rgb(21, 20, 20);
+  background-color: #fde74c;
 }
